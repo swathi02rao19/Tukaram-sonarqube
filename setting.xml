@@ -1,0 +1,25 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <!-- Mirror for Nexus (optional) -->
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://15.206.166.234:8081/repository/maven-public/</url>
+    </mirror>
+  </mirrors>
+
+  <!-- Profiles with repository definitions -->
+  <profiles>
+    <profile>
+      <id>nexus</id>
+
+      <!-- Repositories for downloading dependencies -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo.maven.apache.org/maven2</url>
+     …
