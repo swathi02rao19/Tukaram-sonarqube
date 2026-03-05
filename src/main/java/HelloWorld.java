@@ -9,12 +9,14 @@
 
 public class HelloWorld {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World from Docker Container");
+    public static void main(String[] args) throws Exception {
+        while(true){
+            System.out.println("Hello World from Docker Container");
+            Thread.sleep(5000);
+        }
     }
 
     public void sayHello() {
         System.out.println("Hello World!");
     }
-
 }
