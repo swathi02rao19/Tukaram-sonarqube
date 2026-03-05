@@ -13,4 +13,8 @@ public class HelloWorld {
         System.out.println("Hello World from Docker Container");
     }
 
+    public void sayHello() {
+        System.out.println("Hello World!");
+    }
+
 }
